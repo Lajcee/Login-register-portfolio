@@ -7,17 +7,30 @@
     <title>Edit</title>
 </head>
 <body>
+
+    <nav class="navbar">
+        <ul class="nav justify-content-end">
+           <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+           </li>
+        </ul>
+     </nav>
+
     <div class="container">
         <h1>Edit post</h1>
         <div class="insert_post">
             <form action="" method="POST">
-                <label for="post_title">Comment Title</label>
+
                 <input type="text" name="title" placeholder="Enter post title" id="post_title" required>
-                <label for="post_content">Write your comment</label>
+
                 <textarea name="content" id="post_content" placeholder="Write something..." required></textarea>
-                <label for="author_name">Author Name</label>
+
                 <input type="text" name="author" placeholder="Enter author name" id="author_name" required>
-                <input type="submit" value="POST">
+
+                <button class="submit-btn btn-md" value="POST">Post</button>
             </form>
         </div>
         <hr>

@@ -1,0 +1,222 @@
+$white: whitesmoke; //bg color
+$primary: #F3FAFF;  //light blue 
+$secondary:#1732A5; //dark blue
+$light: #F4D1E3; //pink 
+$dark: #FFBC4D;  //orange
+$info: #70D8B1; //green
+$display1-size : 5rem;
+$display2-size : 4rem;
+$display3-size : 3rem;
+$display4-size : 2rem;
+$headings-font-family :'Ubuntu', sans-serif;
+$spacer: 2rem !default; //margin and padding overall spacing size
+
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+} 
+
+*{
+    box-sizing: border-box;
+    color: #333;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all ease .3s;
+}
+
+.insert_post {
+    width: 80%;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.all_posts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.post-con-outer {
+    width: 33.333%;
+    padding: 1rem 1rem;
+    height: 620px;
+}
+
+
+.post-con-inner {
+    background: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+
+}
+
+.post_title {    
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 0 0 .618rem 0;
+    font-weight: 500;
+    
+}
+
+.post_comment {
+    width: 100%;
+    padding: .618rem 0;
+}
+
+.post_date {
+   margin-left: auto;
+   display: block;
+   position: absolute;
+   right: 3rem;
+   font-size: .8rem;
+   font-style: italic;
+   opacity: 50%;
+}
+
+.post_author {
+    font-size: .8rem;
+    font-style: italic;
+    opacity: 50%;
+    margin: 0 0 1rem 0;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form input, #post_content {
+    height: 2rem;
+    width: 100%;
+    margin: 0 .618rem;
+    font-family: sans-serif;
+    line-height: 2rem;
+    padding-left: .618rem;
+    border-radius: 1rem;
+    border: 1px solid #333;
+    color: #333;
+}
+
+form label {
+    font-size: .8rem;
+    color: #333;
+    height: 2rem;
+    line-height: 2rem;
+    padding-left: 1.3rem;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+    font-weight: 500;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin: 4rem 0 2rem 2rem;
+    font-weight: 400;
+}
+
+.submit-btn {
+    border-radius: 2rem;
+    background: none;
+    color: #333;
+}
+
+.submit-btn:hover {
+    background: #333;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.background-con {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+   
+}
+
+
+.footer-con {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 1rem;
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.btn-link {
+    font-size: .8rem;
+    text-decoration: none;
+    opacity: 50%;
+    padding:0 .618rem 0 0;
+}
+
+.btn-link:hover{
+    opacity: 100%;
+    transition: all .3s ease;
+    text-decoration: underline;
+}
+
+.post-img-con {
+    padding: 2rem 2rem 0 0;
+    padding-right: 2rem;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center;
+    position: absolute;
+    bottom: 4rem;
+}
+
+.post-img {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 20%;
+    padding: 0 1rem;
+    
+}
+
+#submit-btn {
+    width: 20%;
+    margin: 2rem 1rem 0 1rem;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}

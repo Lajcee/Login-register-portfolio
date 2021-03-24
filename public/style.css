@@ -13,12 +13,50 @@ $spacer: 2rem !default; //margin and padding overall spacing size
 
 
 
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  background-color: black; /* fallback color */
+  background-position: center;
+  background-size: cover;
+  transition:all 0.3s ease-in-out;
+  opacity:1;
+}
+.card:hover .card-img-top,
+.card:focus .card-img-top {
+  transform: scale(1.02);
+  opacity:0.5;
+}
+
+.card:hover .card-img-overlay{
+   color:#FFBC4D ;
+}
+
+.card-img-overlay>h5, .card-img-overlay>p{
+    visibility:hidden;
+}
+
+.card-img-overlay:hover h5, .card-img-overlay:hover p{
+    visibility: visible;
+}
+
+.card:hover .card-img-overlay p{
+    font-size:1.5em;
+    letter-spacing:0.02em;
+}
+
+
 .navbar{
 background-color:white;
 }
 
 .nav-link{
-  color:  #FFBC4D ;
+  color:  #1732A5 ;
+}
+
+.nav-link:hover {
+  color: #FFBC4D;
 }
 
 footer {
@@ -489,4 +527,17 @@ form {
 .submit-btn {
     width: 70%;
     margin: 2rem 1rem 0 1rem;
+}
+
+.homeBody {
+  background-color:#F4D1E3 ;
+}
+
+.dashboardColor {
+  background-color:#F3FAFF ;
+  width: 100%;
+}
+
+.footerText {
+  color:#FFBC4D;
 }
